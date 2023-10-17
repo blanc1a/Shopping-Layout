@@ -1,0 +1,85 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Quicksand, Verdana, sans-serif;
+}
+/* SPECIFIC */
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.shoes {
+  background-color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 30px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.grid {
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  border: none;
+  display: grid;
+  grid-template-areas:
+    "a a a a"
+    "b c d e"
+    "f g g g"
+    "h h h h";
+  padding: 2rem 4rem;
+}
+.size,
+.quantity,
+.color {
+  padding-right: 1rem;
+  font-weight: 550;
+}
+.price {
+  background-color: white;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem 10rem;
+  border-radius: 10px;
+  grid-area: a;
+}
+.size {
+  grid-area: b;
+  width: 4rem;
+}
+.size > select {
+  grid-area: c;
+}
+.quantity {
+  grid-area: d;
+  width: 4rem;
+  margin-left: 2rem;
+}
+.quantity > select {
+  grid-area: e;
+}
+.color {
+  grid-area: f;
+}
+.color > input {
+  grid-area: g;
+}
+.addtocard {
+  background-color: #485fb9;
+  color: white;
+  padding: 0.5rem 10rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  grid-area: h;
+}
