@@ -18,14 +18,58 @@ body {
   background-color: white;
   margin-left: 2rem;
   margin-right: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   padding-bottom: 1rem;
   border-radius: 30px;
+}
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+figure {
+  margin: 0;
+}
+.img-wrapper {
+  position: relative;
+}
+.wrapper {
+  background-color: #c3d1da;
+  border-radius: 10px;
+  text-align: center;
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+}
+.wrapper p {
+  margin: 0;
+  display: block;
 }
 img {
   max-width: 100%;
   height: auto;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.below-photo {
+  position: relative;
+  bottom: 3rem;
+  padding-left: 1rem;
+  color: black;
+  font-weight: 900;
+}
+.gradient {
+  position: relative;
+  bottom: 6.5rem;
+  color: transparent;
+  padding: 3rem 0rem;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 193, 195, 0) 0%,
+    white 70%,
+    rgb(255, 255, 255) 100%
+  );
 }
 .grid {
   background-color: #f5f5f5;
@@ -71,8 +115,9 @@ img {
 }
 .color {
   grid-area: f;
+  margin: 1rem 0 0 0;
 }
-.color > input {
+.color > div {
   grid-area: g;
 }
 .addtocard {
@@ -82,4 +127,12 @@ img {
   margin-top: 2rem;
   border-radius: 10px;
   grid-area: h;
+}
+.colors {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-top: 1rem;
 }
