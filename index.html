@@ -4,20 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Blanca Ziems">
-    <meta name="descrition" content="Shopping-Layout">
-    <title>Shopping Layout</title>
+    <title>Document</title>
+    <meta name="description" content="Shopping Layout">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Caprasimo&family=Croissant+One&family=Knewave&family=Quicksand:wght@300&family=Raleway:wght@200&family=Roboto:wght@300&family=Salsa&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=quicksand:300,400,500,600,700" rel="stylesheet" />
 </head>
 
 <body>
     <article class="shoes">
-
         <figure>
             <div class="img-wrapper">
                 <div class="wrapper">
@@ -27,11 +23,12 @@
             <img src="https://camo.githubusercontent.com/386948ec10cc7166718d9ec43783e3f176fe8043abad15775d23eade78196b5b/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313536303037323831302d3163666662303966616630663f697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c664878386647567566444238664878382669786c69623d72622d312e322e31266175746f3d666f726d6174266669743d63726f7026773d3134373026713d3830"
                 alt="Asics">
             <figcaption class="below-photo">Photo by: Maksim Larin</figcaption>
-            <figcaption class="gradient">0</figcaption>
+
         </figure>
         <div class="content">
             <h1>Asics</h1>
-            <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides
+            <p class="description">Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised
+                heel drop sides
                 unique silhouette. Bow detail metallic eyelets leather lining luxurious finish classic courts formal
                 slingback square..</p>
         </div>
@@ -41,7 +38,7 @@
                     <p class="price">$65 USD</p>
 
                     <label class="size">Size</label>
-                    <select>
+                    <select class="select">
                         <option value="6" selected>
                             6
                         </option>
@@ -66,10 +63,12 @@
                         </option>
                     </select>
 
-                    <label class="color">Color</label>
-                    <div class="colors" style="background-color: #1F55AF;"></div>
-                    <div class="colors" style="background-color: #DA4841;"></div>
-                    <div class="colors" style="background-color: black;"></div>
+                    <div class="clr-picking-area">
+                        <p class="clr">Color: </p>
+                        <button class="colors" style="background-color: #1F55AF;"></button>
+                        <button class="colors" style="background-color: #DA4841;"></button>
+                        <button class="colors" style="background-color: black;"></button>
+                    </div>
                     <input class="addtocard" type="submit" value="Add to Card">
 
                 </fieldset>
@@ -82,11 +81,12 @@
             <img src="https://camo.githubusercontent.com/3c412b173fef73e3c44a5aad8330234d4809c03cbc2a0dde18f260707616ed00/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f666c61676765642f70686f746f2d313535363633373634302d3263383064333230316265383f69786c69623d72622d312e322e3126697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c66487838664756756644423866487838266175746f3d666f726d6174266669743d63726f7026773d3134373026713d3830"
                 alt="Adidas">
             <figcaption class="below-photo">Photo by: Daniel Storek</figcaption>
-            <figcaption class="gradient">0</figcaption>
+
         </figure>
         <div class="content">
             <h1>Adidas</h1>
-            <p>Effortless comfortable full leather lining eye-catching unique detail to the toe low 'cut-away' sides
+            <p class="description">Effortless comfortable full leather lining eye-catching unique detail to the toe low
+                'cut-away' sides
                 clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten
                 heel this ladylike...</p>
         </div>
@@ -122,13 +122,15 @@
                         </option>
                     </select>
 
-                    <label class="color">Color</label>
-                    <div class="colors"
-                        style="background-image: conic-gradient(black 0deg 180deg, #989737 180deg 360deg);"></div>
-                    <div class="colors"
-                        style="background-image: conic-gradient(black 0deg 180deg, #578BD8 180deg 360deg);"></div>
-                    <div class="colors"
-                        style="background-image: conic-gradient(black 0deg 180deg, #D4668E 180deg 360deg);"></div>
+                    <div class="clr-picking-area">
+                        <p class="clr">Color: </p>
+                        <button class="colors"
+                            style="background-image: conic-gradient(black 0deg 180deg, #989737 180deg 360deg);"></button>
+                        <button class="colors"
+                            style="background-image: conic-gradient(black 0deg 180deg, #578BD8 180deg 360deg);"></button>
+                        <button class="colors"
+                            style="background-image: conic-gradient(black 0deg 180deg, #D4668E 180deg 360deg);"></button>
+                    </div>
 
                     <input class="addtocard" type="submit" value="Add to Card">
         </div>
@@ -140,17 +142,18 @@
         <figure>
             <div class="img-wrapper">
                 <div class="wrapper">
-                    <p>Free Shipping!</p>
+                    <p>Just One Left!</p>
                 </div>
             </div>
             <img src="https://camo.githubusercontent.com/418e0658bb2b6ba856b9fdaa1b668d92516bc8dfa3ee253e57ab44cb9412b019/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313533393138353434313735352d3736393437336132333537303f697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c664878386647567566444238664878382669786c69623d72622d312e322e31266175746f3d666f726d6174266669743d63726f7026773d3134373126713d3830"
                 alt="New Balance">
             <figcaption class="below-photo">Photo by: felipepelaquim</figcaption>
-            <figcaption class="gradient">0</figcaption>
+
         </figure>
         <div class="content">
             <h1>New Balance</h1>
-            <p>Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides
+            <p class="description">Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised
+                heel drop sides
                 unique silhouette. Bow detail metallic eyelets leather lining luxurious finish classic courts formal
                 slingback square...</p>
         </div>
@@ -186,11 +189,13 @@
                         </option>
                     </select>
 
-                    <label class="color">Color</label>
-                    <div class="colors"
-                        style="background-image: conic-gradient(white 0deg 180deg, #CE3329 180deg 360deg);"></div>
-                    <div class="colors"
-                        style="background-image: conic-gradient(white 0deg 180deg, black 180deg 360deg);"></div>
+                    <div class="clr-picking-area">
+                        <p class="clr">Color: </p>
+                        <button class="colors"
+                            style="background-image: conic-gradient(white 0deg 180deg, #CE3329 180deg 360deg);"></button>
+                        <button class="colors"
+                            style="background-image: conic-gradient(white 0deg 180deg, black 180deg 360deg);"></button>
+                    </div>
                     <input class="addtocard" type="submit" value="Add to Card">
 
                 </fieldset>
